@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社交网站个人信息</title>
+    <style>
+        h2{
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            background-color:lightblue;
+            text-align: center;
+            border: 1px solid;
+        }
+        div.element{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+        }
+        div.left,div.right,div.last{
+            flex: 1;
+            border: 1px solid ;
+        }
+        div.left{
+            margin-right: 10px;
+        }
+        form{
+            margin-top: 40px;
+            text-align: center;
+        }
+        form input{
+            width: 70%;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 50px;
+            background: url('./img/1.PNG') no-repeat;
+            margin: 10px;
+        }
+        div.left .submit{
+            width: 100%;
+            height: 70px;
+            font-size: 20px;
+            margin-top: 40px;
+            background-color: lightblue;
+            border: none;
+        }
+        div.right{
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            text-align: center;
+        }
+        .text img{
+            width: 95%;
+            border-radius: 20%;
+            margin: 5px;
+        }
+        .message{
+            display: flex;
+            padding: 8px 0px;
+        }
+        .fmessage{
+            flex: 1;
+            text-align: center;
+            background-color: lightcoral;
+            border-radius: 20%;
+            margin: 10px;
+        }
+        .smessage{
+            flex: 1;
+            text-align: center;
+            background-color: lightgreen;
+            border-radius: 20%;
+            margin: 10px;
+        }
+        div.last{
+            background-color: lightblue;
+        }
+        .content{
+            display: flex;
+            border-bottom: 1px solid ;
+            padding: 9px;
+        }
+        .content span{
+            display: block;
+            margin-left: 15px;
+            height: 45px;
+            line-height: 45px;
+        }
+        .content2{
+            display: flex;
+            padding: 9px;
+        }
+        .content2 span{
+            display: block;
+            margin-left: 15px;
+            height: 45px;
+            line-height: 45px;
+        }
+        i{
+            margin:15px 8px 15px 30px;
+        }
+        @media screen and (max-width: 768px) {
+            .element{
+                flex-direction: column;
+            }
+            .left,.right,.last{
+                width: 100%;
+            }
+            .right,.last{
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>personal information</h2>
+    <div class="element">
+        <div class="left">
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Please enter the old password">
+                </div>
+                <div>
+                    <input type="text" placeholder="Please enter a new password">
+                </div>
+            </form>
+            <input type="submit" value="Change Password" class="submit">
+        </div>
+        <div class="right">
+            <div class="text">
+                <img src="./img/me.jpg" alt="">
+                <p><em>Cool boy</em></p>
+            </div>
+            <div class="message">
+                <div class="fmessage">
+                    <p>2020250</p>
+                    <p>funs</p>
+                </div>
+                <div class="smessage">
+                    <p>7210117</p>
+                    <p>attention</p>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+                <div class="content">
+                    <i class="fa fa-user-o"></i>
+                    <span>personal data</span>
+                </div>
+                <div class="content">
+                    <i class="fa fa-commenting-o"></i>
+                    <span>news</span>
+                </div>
+                <div class="content">
+                    <i class="fa fa-cog"></i>
+                    <span>set up</span>
+                </div>
+                <div class="content2">
+                    <i class="fa fa-wrench"></i>
+                    <span>Log out</span>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function conutDown() {
+        var time=prompt ();
+        var nowTime =+new Date();
+        var inputTime=+new Date(time);
+        var difference=(inputTime-nowTime)/1000;
+        var day=parseInt(difference/60/60/24);
+        day=day<10 ? '0'+day:day;
+        var hour=parseInt((difference%(3600*24))/60/60);
+        hour=hour<10 ? '0'+hour:hour;
+        var min=parseInt((difference%3600)/60);
+        min=min<10 ? '0'+min:min;
+        var sec=parseInt((difference%60));
+        sec=sec<10 ? '0'+sec:sec;
+        console.log('还剩'+day+'天'+hour+'小时'+min+'分'+sec+'秒');
+    }
+    conutDown();
+</script>       
+</html>
